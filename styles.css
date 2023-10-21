@@ -2,34 +2,67 @@ body {
     margin: 0;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    background-image: url("img/switch.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     background-position: center;
+}
+
+#consola{
+    background:blue;
     position: relative;
+    display: flex;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+#consola > img{
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 #pantalla {
-    width: 60%; 
-    height: 30%;
+    width: 62%; 
+    height: 79%;
     background-color: #63A69F; 
     margin: auto;
-    position: absolute;
- 
- 
+    border-radius: 1%;
+    position:absolute;
+    top:51%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+
 }
 
+#suelo{
+    flex: 1 100%;
+    height: 20%;
+    background-color: brown;
+
+}
+
+#cielo{
+    flex: 1 100%;
+    height: 80%;
+    background-color: bisque;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+
 #mario {
-    width: 40p;
+    width: 40px;
     height: 60px; 
     background-color: red; 
-    position: absolute;
-    bottom: 0;
+    display: flex;
+
 }
 
 .enemigo {
