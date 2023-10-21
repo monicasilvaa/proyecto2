@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("img/switch.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    position: relative;
+}
+
+#pantalla {
+    width: 60%; 
+    height: 30%;
+    background-color: #63A69F; 
+    margin: auto;
+    position: absolute;
+ 
+ 
+}
+
+#mario {
+    width: 40p;
+    height: 60px; 
+    background-color: red; 
+    position: absolute;
+    bottom: 0;
+}
+
+.enemigo {
+    width: 40px; 
+    height: 40px; 
+    background-color: green; 
+    position: absolute;
+    bottom: 0;
+}
