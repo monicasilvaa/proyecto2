@@ -73,6 +73,7 @@ body {
     background-size: 2150%;
     background-position: 7% 0;
     position: absolute;
+    z-index: 1;
 }
 
 .enemigo {
@@ -105,3 +106,17 @@ body {
     background-position: 0.8% 76%;
     position: absolute;
 }
+
+/** ANIMACIONES DE MARIO**/
+.correr-0{
+    background-position: 21% 0;
+}
+.correr-1{
+    background-position: 28% 0;
+}
+.correr-2{
+    background-position: 35% 0;
+}
+.saltar{
+    background-position: 64% 0;
+  }
