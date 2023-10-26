@@ -27,6 +27,15 @@
                 </div>
                 <div id="suelo"></div>
             </div>
+            <div id="pantallaApagada"></div>
+            <div id="pantallaEncendida">
+                <video id="videoIntro" src="videos/intro.mp4"></video>
+            </div>
+            <div id="seleccionPersonaje">
+                <div id="personajeUno"></div>
+                <div id="personajeDos"></div>
+                <div id="personajeTres"></div>
+            </div>
        </div>
        <div id="mandoDerecho">
             <div id="controlesDerechos">
@@ -36,11 +45,12 @@
                 <div class="botonAbajo"><span>B</span></div>
             </div>
             <div id="joystickDerecho"></div>
-            <div id="botonOnOff"><img src="img/home.png" alt=""></div>
+            <div id="botonOnOff" onclick="consola.encenderApagar()"><img src="img/home.png" alt=""></div>
        </div>
         
     </div>
     <script src="js/camara.js"></script>
     <script src="js/jugador.js"></script>
+    <script src="js/consola.js"></script>
 </body>
 </html>
