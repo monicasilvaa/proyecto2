@@ -11,8 +11,8 @@
        <div id="mandoIzquierdo">
             <div id="controlesIzquierdos">
                 <div class="botonArriba"><img src="img/boton.png" alt="boton"></div>
-                <div class="botonDerecho"><img src="img/boton.png" alt="boton"></div>
-                <div class="botonIzquierdo"><img src="img/boton.png" alt="boton"></div>
+                <div class="botonDerecho" onclick="consola.seleccionarPersonaje(1)"><img src="img/boton.png" alt="boton"></div>
+                <div class="botonIzquierdo" onclick="consola.seleccionarPersonaje(-1)"><img src="img/boton.png" alt="boton"></div>
                 <div class="botonAbajo"><img src="img/boton.png" alt="boton"></div>
             </div>
             <div id="joystickIzquierdo"></div>
@@ -20,7 +20,6 @@
        <div id="marcoPantalla">
             <div id="pantalla">
                 <div id="cielo">
-                    <div id="jugador" class="mario"></div>
                     <div class="enemigo"></div>
                     <div class="tubo"></div>
                     <div class="nube"></div>
@@ -32,15 +31,22 @@
                 <video id="videoIntro" src="videos/intro.mp4"></video>
             </div>
             <div id="seleccionPersonaje">
-                <div id="personajeUno"></div>
-                <div id="personajeDos"></div>
-                <div id="personajeTres"></div>
+                <h2 class="titulo">Selecciona el personaje con las flechas de la consola y pulsa el botón A para la iniciar partida</h2>
+                <div id="personajeUno" class="personaje borde">
+                    <div class="mario"></div>
+                </div>
+                <div id="personajeDos" class="personaje">
+                    <div class="luigi"></div>
+                </div>
+                <div id="personajeTres" class="personaje">
+                    <div class="toad"></div>
+                </div>
             </div>
        </div>
        <div id="mandoDerecho">
             <div id="controlesDerechos">
                 <div class="botonArriba"><span>X</span></div>
-                <div class="botonDerecho"><span>A</span></div>
+                <div class="botonDerecho" onclick="consola.aceptarPersonaje()"><span>A</span></div>
                 <div class="botonIzquierdo"><span>Y</span></div>
                 <div class="botonAbajo"><span>B</span></div>
             </div>
