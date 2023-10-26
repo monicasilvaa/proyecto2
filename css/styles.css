@@ -1,0 +1,471 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-image:url("../img/fondo.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#consola{
+    display: flex;
+    align-items: center;
+    width: 80%; 
+    padding-top: 35%;   
+    position: relative;
+}
+
+/*Mando izquierdo*/
+#mandoIzquierdo{
+    background-color: blue;
+    height: 100%;
+    width: 15%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+#joystickIzquierdo{
+    padding-top: 60%;
+    width: 60%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:25%;
+    background-color: black;
+    position:absolute;
+
+}
+
+#controlesIzquierdos{
+    padding-top: 80%;
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 60%;
+
+}
+
+.botonArriba img{
+    max-width: 60%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.botonIzquierdo img{
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+}
+
+.botonDerecho img{
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.botonAbajo img{
+    max-width: 60%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(180deg);
+}
+/*Mando derecho*/
+#mandoDerecho{
+    background-color:red;
+    height: 100%;
+    width: 15%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+#joystickDerecho{
+    padding-top: 60%;
+    width: 60%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:60%;
+    background-color: black;
+    position:absolute;
+
+}
+
+#botonOnOff{
+    padding-top: 20%;
+    width: 20%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    left: 30%;
+    top:80%;
+    background-color: #293131;
+    position:absolute; 
+    border: 0.2rem solid grey;
+    border-radius: 50%;  
+}
+
+#botonOnOff img{
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%) 
+}
+
+#controlesDerechos{
+    height: 30%;
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 30%;
+}
+
+.botonArriba span {
+    color: white;
+    font-size: 0.6rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+.botonIzquierdo span {
+    color: white;
+    font-size: 0.6rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+.botonDerecho span {
+    color: white;
+    font-size: 0.6rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+.botonAbajo span {
+    color: white;
+    font-size: 0.6rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+/*Botones (Mando derecho e izquierdo)*/
+.botonArriba{
+    height: 28%;
+    width: 28%;
+    border-radius: 50%;
+    background-color:  #293131;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:20%;
+}
+
+.botonDerecho{
+    height: 28%;
+    width: 28%;
+    border-radius: 50%;
+    background-color:  #293131;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 80%;
+    top:50%;
+}
+
+.botonIzquierdo{
+    width: 28%;
+    height: 28%;
+    border-radius: 50%;
+    background-color:  #293131;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 20%;
+    top:50%;
+}
+.botonAbajo{
+    height: 28%;
+    width: 28%;
+    border-radius: 50%;
+    background-color:  #293131;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 80%;
+}
+
+
+
+#marcoPantalla{
+    height: 100%;
+    width: 70%;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+
+}
+
+#pantalla {
+    width: 85%; 
+    height: 85%;
+    background-color: #63A69F; 
+    margin: auto;
+    border-radius: 1%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    overflow: hidden;
+
+}
+
+#pantallaApagada {
+    width: 85%; 
+    height: 85%;
+    background-color:#293131; 
+    margin: auto;
+    border-radius: 1%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    overflow: hidden;
+
+}
+
+#pantallaEncendida{
+    width: 85%; 
+    height: 85%;
+    margin: auto;
+    border-radius: 1%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    overflow: hidden;
+}
+
+#videoIntro{
+    width: auto;
+    height: 100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#seleccionPersonaje{
+    width: 85%; 
+    height: 85%;
+    margin: auto;
+    border-radius: 1%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    overflow: hidden;
+    align-items: center;
+    background-color: beige;
+    justify-content: space-around;
+}
+
+.personaje{
+    height: 60%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+#personajeUno .mario{
+    height: 45%;
+    width: 20%;
+}
+
+#personajeDos .luigi{
+    height: 45%;
+    width: 20%;
+}
+
+#personajeTres .toad{
+    height: 45%;
+    width: 20%;
+}
+
+#suelo{
+    flex: 1 100%;
+    height: 20%;
+    background-image: url(../img/floor.png);
+
+}
+
+#cielo{
+    flex: 1 100%;
+    height: 80%;
+    background-color: rgb(136, 146, 231);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    
+}
+
+
+#jugador{
+    width: 10%;
+    height: 27%; 
+    display: flex;
+    
+
+}
+
+#jugador.luigi, #jugador.toad{
+    height: 29%; 
+}
+
+.mario{
+    background-image: url(../img/heroes_sprite.png);
+    background-repeat: no-repeat;
+    background-size: 2150%;
+    background-position: 7% 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.luigi{
+    background-image: url(../img/heroes_sprite.png);
+    background-repeat: no-repeat;
+    background-size: 2150%;
+    background-position: 7% 28.2%;
+    position: absolute;
+    z-index: 1;
+}
+
+.toad{
+    background-image: url(../img/heroes_sprite.png);
+    background-repeat: no-repeat;
+    background-size: 2150%;
+    background-position: 7% 56%;
+    position: absolute;
+    z-index: 1;
+}
+
+.borde{
+    border:2px dashed yellow;
+    background-color: rgb(221, 166, 84);
+}
+
+.titulo{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 90%;
+    font-size: 1.5vw;
+    text-align: center;
+    transform: translate(-50%,0%);
+}
+
+.enemigo {
+    width: 7%;
+    height: 14%; 
+    background-image: url(../img/enemies_sprite.png);
+    margin-left: auto;
+    background-size: 2150%;
+    background-position: 3.5% 0;
+
+}
+
+.tubo{
+    width: 12%;
+    height: 25%;
+    background-image: url(../img/tiles.png); 
+    left: 50%;
+    background-size: 1700%;
+    background-position: 0.1% 30.8%;
+    position: absolute;
+}
+
+.nube{
+    width: 12%;
+    height: 12%;
+    background-image: url(../img/tiles.png); 
+    left: 60%;
+    top: 10%;
+    background-size: 1200%;
+    background-position: 0.8% 76%;
+    position: absolute;
+}
+
+/** ANIMACIONES DE MARIO**/
+.mario.correr-0{
+    background-position: 21% 0;
+}
+.mario.correr-1{
+    background-position: 28% 0;
+}
+.mario.correr-2{
+    background-position: 35% 0;
+}
+.mario.saltar{
+    background-position: 64% 0;
+}
+
+.luigi.correr-0{
+    background-position: 21% 28.2%;
+}
+.luigi.correr-1{
+    background-position: 28% 28.2%;
+}
+.luigi.correr-2{
+    background-position: 35% 28.2%;
+}
+.luigi.saltar{
+    background-position: 64% 28.2%;
+ }
+.toad.correr-0{
+    background-position: 21% 56%;
+}
+.toad.correr-1{
+    background-position: 28% 56%;
+}
+.toad.correr-2{
+    background-position: 35% 56%;
+}
+.toad.saltar{
+    background-position: 64% 56%;
+  }
